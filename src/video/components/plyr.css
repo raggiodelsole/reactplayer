@@ -1,4 +1,12 @@
 :root {
     --plyr-color-main: #1ac266;
-    /* --plyr-line-height: 200; */
+  }
+
+  .playerDiv{
+    margin: auto;
+    border: 3px solid green;
+    padding: 10px;
+    width: 800px;
+    height: 600px;
+    background-color: aquamarine;
   }

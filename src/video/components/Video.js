@@ -1,7 +1,7 @@
 import React from 'react';
 import Plyr from 'plyr';
 
-// import './plyr.css';
+import './plyr.css';
 
 class Video extends React.Component {
 
@@ -15,6 +15,7 @@ class Video extends React.Component {
     }
 
     componentDidMount() {
+        // const options = {autoplay: true, }; //hehe
         const options = {};
         const video = document.getElementById("player");
         this.player = new Plyr(video, options);
@@ -30,9 +31,12 @@ class Video extends React.Component {
     }
 
     render() {
-        return (<video id="player">
-
-        </video>
+        return (
+            <div className="playerDiv">
+            <video id="player" >
+            </video>
+            </div>
+           
 
         );
     }

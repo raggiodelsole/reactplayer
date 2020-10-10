@@ -26,6 +26,9 @@ class App extends React.Component {
     this.setState({ activeMovie: elem });
 
   }
+  // getCosTam = (activeMovie) => {
+  //   return <Video video={activeMovie} />;
+  // }
 
   render() {
     //todo: konfiguracja playera i css - zeby lepiej wygladalo i zeby wielkosc byla lepsza
@@ -33,7 +36,6 @@ class App extends React.Component {
     return (
       <div className="App">
         <VideoList movies={movies} handleClick={this.handleClick} />
-        <h1>Gowno!</h1>
         {movies.length > 0 ? <Video video={activeMovie} /> : null}
 
       </div>
@@ -41,5 +43,12 @@ class App extends React.Component {
   }
 
 }
+// <div className="App">
+// <VideoList movies={movies} handleClick={this.handleClick} />
+// {movies.length > 0 ? <Video video={activeMovie} /> : null}
+
+// </div>
+
+
 
 export default App;
